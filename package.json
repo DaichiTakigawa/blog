@@ -1,24 +1,43 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "memo",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple memo",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Daichi Takigawa <1023bobyama@gmail.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.20",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.7",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-plugin-typography": "^2.3.2",
+    "gatsby-remark-autolink-headers": "^2.1.3",
+    "gatsby-remark-prismjs": "^3.3.3",
     "gatsby-source-filesystem": "^2.1.5",
+    "gatsby-transformer-remark": "^2.6.5",
     "gatsby-transformer-sharp": "^2.2.3",
+    "prismjs": "^1.16.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "styled-components": "^4.3.2",
+    "typography": "^0.16.19",
+    "typography-theme-github": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-info": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -31,13 +50,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }

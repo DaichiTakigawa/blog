@@ -3,9 +3,9 @@ module.exports = {
     title: `MEMO`,
     description: `A Simple Memo`,
     author: `Daichi Takigawa`,
+    siteUrl: `https://DaichiTakigawa.github.io/blog`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,5 +53,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
   ],
 }

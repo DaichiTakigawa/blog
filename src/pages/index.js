@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {graphql} from 'gatsby'
 
 import Layout from '../components/templates/layout'
@@ -13,14 +12,13 @@ import GridLayout from '../components/organisms/gridLayout'
 
 
 const Index = ({data}) => { 
-    console.log(data)
     return (<Layout>
         <Container>
             <Heading>Home</Heading>
-            <p style={{padding: "0 1rem"}}>ダメ人間はダメ人間として頑張る。</p>
+            <p style={{padding: "0 1rem"}}>日頃の備忘録としてまとめたメモ</p>
             <GridLayout>
                 {data.allMarkdownRemark.edges.map((item, index) => (
-                    <Article key={index} frontmatter={item.node.frontmatter} text={item.node.rawMarkdownBody} />
+                    <Article key={index} frontmatter={item.node.frontmatter} text={item.node.html} />
                 ))}
             </GridLayout>
             <div style={{ height: "1000px" }}></div>
@@ -40,13 +38,14 @@ query {
             tags
             slug
             date
+            description
             category
             thumbnail {
                 absolutePath
                 name
             }
             }
-            rawMarkdownBody
+            html
         }
         }
     }

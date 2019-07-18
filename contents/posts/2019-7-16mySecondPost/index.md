@@ -9,7 +9,7 @@ tags:
     - "computer"
 ---
 
-# my fist post
+# my scond post
 
 これから、いろんな投稿をしていきます。
 

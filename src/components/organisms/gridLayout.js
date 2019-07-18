@@ -4,11 +4,14 @@ class GridLayout extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            width: window.innerWidth
+            width: 680
         }
-        window.addEventListener('resize', () => {this.setState({width: window.innerWidth})})
     }
 
+    componentDidMount() {
+        window.addEventListener('resize', () => {this.setState({width: window.innerWidth})})
+        this.setState({width: window.innerWidth})
+    }
 
     render () {
         return (

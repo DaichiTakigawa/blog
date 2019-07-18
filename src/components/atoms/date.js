@@ -10,7 +10,7 @@ const Date = ({time}) => {
 
 export default Date
 
-const DateWrap = styled.p`
+const DateWrap = styled.span`
     color: grey;
     margin-bottom: 0.02rem;
 `

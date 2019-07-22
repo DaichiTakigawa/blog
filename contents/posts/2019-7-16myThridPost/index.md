@@ -14,9 +14,9 @@ tags:
 
 これから、いろんな投稿をしていきます。
 
-- 朝: 寝ている。
-- 昼: 日本橋ベローチェ。
-- 夕: 日本橋ベローちぇ。
+- 朝: わああああああああああああああ。
+- 昼: わああああああああああああああああ。
+- 夕: わああああああああああああ。
     - todolist
         - いイェア
 
@@ -54,6 +54,30 @@ int main() {
     cin >> a;
     cout << a;
     return 0;
+}
+```
+
+```kotlin:title=main.kt
+object MyProfile {
+    var name: String = "Hiroaki Kaneda"
+    var postalCode: String = "049-3592"
+    fun getSignature() {
+        println("$postalCode $name")
+    }
+}
+
+class Person(val name: String) {
+    companion object {
+        fun printMe() = println("Hello, Kotolin!!")
+    }
+
+    fun introduse() = println("my name is $name")
+}
+
+fun String.surround() = "[" + this + "]"
+
+fun main(args: Array<String>) {
+    println("Kotlin".surround())
 }
 ```
 

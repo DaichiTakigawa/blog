@@ -18,7 +18,6 @@ const Index = () => (
                 </p>
                 <h4 style={{border: "none", lineHeight: "3rem"}}>About</h4>
                 <p>
-                    Jazzが好きです。Keith Jarrettをよく聴きます。<br />
                     競技プログラミングもやっています。(AtCoder: Bobyama, 青色, Rating1760)<br />
                 </p>
             </div>

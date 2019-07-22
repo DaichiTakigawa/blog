@@ -1,2 +1,2 @@
 # blog
-MEMO https://DaichiTakigawa.github.io/blog
+MEMO https://takigawamemo.netlify.com/

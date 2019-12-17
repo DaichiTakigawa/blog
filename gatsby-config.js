@@ -43,6 +43,7 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       }
     },
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -51,11 +52,11 @@ module.exports = {
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#575757',
+        icon: 'static/icon.png'
       },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
   ],
 }

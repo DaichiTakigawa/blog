@@ -10,13 +10,5 @@ export default () => (
               content: '備忘録'
           }
       ]}   
-      // link={
-      //   [
-      //     {
-      //       rel: 'shortcut icon'
-      //       href: ''
-      //     }
-      //   ]
-      // }
   />
 )

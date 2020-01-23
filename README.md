@@ -1,2 +1,3 @@
+## deprecated
 # blog
 MEMO
